@@ -3,7 +3,6 @@ echo "deploy file started"
 cd /home/ubuntu/jenkins/workspace/Workerjob/viteC
 rm -rf node_modules/
 /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run build
 /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i express
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/node /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run build
 echo "bash file completed"
-#/home/ubuntu/.nvm/versions/node/v20.12.2/bin/node /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run dev
