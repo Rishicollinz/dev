@@ -4,7 +4,8 @@ export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v20.12.2/bin/
 cd /home/ubuntu/jenkins/workspace/Workerjob/viteC
 rm -rf node_modules/
 /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i express
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm install vite --save-dev
 /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run build
+#/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm install vite --save-dev
+rm -rf dockerfile index.html node_modules package-lock.json package.json public/ src/ vite.config.js 
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i express
 echo "bash file completed"
