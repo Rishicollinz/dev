@@ -5,7 +5,7 @@ module.exports = {
             script: "/home/ubuntu/jenkins/workspace/Workerjob/viteC/server.js",
             cwd: "/home/ubuntu/jenkins/workspace/Workerjob/viteC",
             watch: false,
-            instances: "2",
+            instances: "3",
             exec_mode: "cluster"
         }
     ]
