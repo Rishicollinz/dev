@@ -1,8 +1,10 @@
 #!/bin/bash
 echo "deploy file started"
+export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v20.12.2/bin/
 cd /home/ubuntu/jenkins/workspace/Workerjob/viteC
 rm -rf node_modules/
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/node /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/node /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i express
-/home/ubuntu/.nvm/versions/node/v20.12.2/bin/node /home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run build
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm i express
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm install vite --save-dev
+/home/ubuntu/.nvm/versions/node/v20.12.2/bin/npm run build
 echo "bash file completed"
